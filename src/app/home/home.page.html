@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar color="verminicial">
+    <ion-title>Centro Paula Souza</ion-title>  
+  </ion-toolbar>
+  <ion-item color="azulfundo"> 
+    <ion-label>
+      Etec Comendador João Rays
+    </ion-label>
+  </ion-item> 
+</ion-header>
+
+ 
+    <ion-content color="cinzafundo">
+      <ion-button color="dark" expand="full" (click)="tipoUsuario = 'aluno'" size="small">Aluno</ion-button>
+      <ion-button color="dark" expand="full" (click)="tipoUsuario = 'professor'" size="small">Professor</ion-button>
+      <ion-button color="dark" expand="full" (click)="tipoUsuario = 'visitante'" size="small">Visitante</ion-button>
+      <ion-card>
+      <div [ngSwitch]="tipoUsuario">
+    
+        <ion-list *ngSwitchCase="'aluno'">
+          <ion-list-header color="dark">Login do Aluno</ion-list-header>
+          <ion-item>RM :</ion-item>
+          <ion-item>Senha :</ion-item>
+          <ion-item>Sair</ion-item>
+        </ion-list>
+    
+        <ion-list *ngSwitchCase="'professor'" >
+          <ion-list-header color="dark">Login do Professor</ion-list-header>
+          <ion-item>Código do professor :</ion-item>
+          <ion-item>Senha</ion-item>
+          <ion-item>Sair</ion-item>
+        </ion-list>
+        <ion-list *ngSwitchCase="'visitante'">
+          <ion-button color="verminicial" routerLink="/noticias" expand="full">Noticias</ion-button>
+          <ion-button color="verminicial" routerLink="/horarios" expand="full">Horários</ion-button>
+          <ion-button color="verminicial" routerLink="/sobre" expand="full">Sobre</ion-button>
+        </ion-list>
+      </div>
+    </ion-card>
+    </ion-content>
+  
+

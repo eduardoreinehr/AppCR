@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-toolbar color="verminicial">
+      <ion-back-button slot="start"></ion-back-button>
+      <ion-title>Noticias</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+  <ion-card>
+  <ion-card-content>
+  <ion-card-title color="verminicial">{{noticia.titulo}}</ion-card-title>
+  <ion-icon name="calendar"></ion-icon>{{noticia.data}}
+  <ion-icon name="person"></ion-icon>{{noticia.autor}}
+  <ion-img [src]="noticia.img"></ion-img>
+  <ion-label>{{noticia.conteudo}}</ion-label>
+  </ion-card-content>
+  </ion-card>
+  
+  
+  
+  </ion-content>

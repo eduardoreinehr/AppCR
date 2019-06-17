@@ -1,0 +1,48 @@
+
+table{
+    width: 100%;
+}
+
+table, tr, th, td{
+    border: 1px solid #000000;
+    text-align: center;
+}
+
+th{
+    width: fit-content;
+}
+
+td{
+    height: 50px;
+    width: 20%;
+}
+tr{
+    height: 50px;
+}
+.fundo-qui{
+    background-color: #00008B;
+}
+.fundo-mat{
+    background-color: #1E90FF;
+}
+.fundo-fis{
+    background-color: #FFD700;
+}
+.fundo-fil{
+    background-color: #00FF7F;
+}
+.fundo-edf{
+    background-color:#6B8E23;
+}
+.fundo-lpl{
+    background-color: red;
+}
+.fundo-ing{
+    background-color: #800080;
+}
+.fundo-bio{
+    background-color:#008000;
+}
+.fundo-soc{
+    background-color:#A9A9A9;
+}
